@@ -7,6 +7,7 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: "Poppins", serif;
+    transition: 0.5s;
 }
 
 button{
@@ -34,12 +35,37 @@ nav{
   align-items: center;
   height: 50px;
   padding: 0 1rem;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
   position: fixed;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   top:  0;
   left: 0;
   width: 100%;
   z-index: 100;
+}
+
+#menu{
+  width: 60%;
+  height: 100vh;
+  backdrop-filter: blur(15px);
+  position: fixed;
+  top: 50px;
+  right: -60%;
+  z-index: 50;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+  padding: 1rem;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+#menu a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+}#menu a:hover{
+  color: #5838D0;
 }
 
 

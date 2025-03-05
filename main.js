@@ -1,3 +1,19 @@
+let toggle = document.getElementById('toggle')
+let menu = document.getElementById('menu')
+
+let isShow =  false
+toggle.addEventListener('click',()=>{
+  if (isShow == false) {
+    menu.style.right = '0'
+    isShow = true
+  } else {
+    menu.style.right = '-60%'
+    isShow = false
+  }
+})
+
+
+
 // Smooth scrolling for navbar links
 document.querySelectorAll('.navbar a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -24,3 +40,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('formMessage').style.color = "red";
     }
 });
+
+
+
+
