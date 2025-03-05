@@ -9,6 +9,9 @@
     font-family: "Poppins", serif;
     transition: 0.5s;
 }
+img{
+  width:  100%;
+}
 
 button{
   background: #5838D0;
@@ -17,7 +20,7 @@ button{
   outline: 0;
   border-radius: 0.25rem;
  
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   font-weight: 600;
   letter-spacing: 1px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -27,6 +30,34 @@ button:hover{
   margin-top: -0.25rem;
   margin-bottom: 0.25rem;
 }
+
+.title{
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.title:after{
+  position: absolute;
+  content: "";
+  background: #5838D0;
+  height: 0.3rem;
+  width: 50px;
+  border-radius: 0.15rem;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sub-title{
+  color: #444;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+
 /* Navbar */
 nav{
   display: flex;
@@ -102,25 +133,6 @@ section {
 #about{
   background-color: ghostwhite;
 }
-#about > h2{
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  position: relative;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-#about h2:after{
-  position: absolute;
-  content: "";
-  background: #5838D0;
-  height: 0.3rem;
-  width: 50px;
-  border-radius: 0.15rem;
-  bottom: -1rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 
 
@@ -146,6 +158,11 @@ section {
     background: #f4f4f4;
     padding: 20px;
     margin: 10px 0;
+}
+.project p{
+  font-size: 0.8rem;
+  color: #111;
+  line-height: 1.5rem;
 }
 
 
